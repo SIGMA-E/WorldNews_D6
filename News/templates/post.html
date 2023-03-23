@@ -1,0 +1,46 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+
+{% block title %}
+Post
+{% endblock title %}
+
+{% block content %}
+    <div class="content header">
+        <a href="/news"><b>На главную</b></a>
+    </div>
+    <div class="padd">
+        <table class="table list">
+            <tr>
+                <th>Заголовок поста</th>
+                <th>Дата публикации</th>
+                <th>Содержание поста</th>
+            </tr>
+            <tr>
+                <td>{{ post.title }}</td>
+                <td>{{ post.time_post|date:'d F Y' }}</td>
+                <td>{{ post.text_post|filter_words }}</td>
+            </tr>
+        </table>
+        <hr>
+        <table class="table list">
+            <tr>
+                <th>Заголовок поста</th>
+                <td>{{ post.title }}</td>
+            </tr>
+            <tr>
+                <th>Дата публикации</th>
+                <td>{{ post.time_post|date:'d F Y' }}</td>
+            </tr>
+            <tr>
+                <th>Время публикации</th>
+                <td>{{ post.time_post|time }}</td>
+            </tr>
+            <tr>
+                <th>Содержание поста</th>
+                <td>{{ post.text_post|filter_words }}</td>
+            </tr>
+        </table>
+    </div>
+{% endblock content %}

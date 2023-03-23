@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient( to right, #48D1CC, #40E0D0, #AFEEEE )
+}
+
+.content {
+    text-align: center;
+}
+
+.header {
+    background-color: #5F9EA0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.list {
+    text-align: left;
+}
+
+.post_id {
+    list-style-type: none;
+}
+
+.padd{
+    padding-top: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse; 
+}
+
+.table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #5F9EA0;
+    border: 1px solid #dddddd;
+}
+
+.table td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+}
+
